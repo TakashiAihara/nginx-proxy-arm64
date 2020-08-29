@@ -1,6 +1,6 @@
 version: "3"
 services:
-  nginx-proxy-arm64:
+  nginx-proxy:
     build: .
     restart: always
     ports:
@@ -11,4 +11,4 @@ services:
 networks:
   default:
     external:
-      name: nginx-proxy-arm64
+      name: nginx-proxy
